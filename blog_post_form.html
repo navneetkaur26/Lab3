@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY BLOG POST</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: pink;
+            margin: 0px;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: brown;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid blueviolet;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: greenyellow;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Submit a Blog Post</h1>
+    <form id="blogPostForm">
+        <label for="title">Blog Post Title</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="author">Author's Name</label>
+        <input type="text" id="author" name="author" required>
+
+        <label for="content">Blog Post Content</label>
+        <textarea id="content" name="content" rows="5" required></textarea>
+
+        <label for="category">Category</label>
+        <select id="category" name="category" required>
+            <option value="">Select a category</option>
+            <option value="tech">Technology</option>
+            <option value="meme">Meme</option>
+            <option value="health">Health</option>
+            <option value="music">Music</option>
+        </select>
+
+        <button type="submit">Submit Post</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('blogPostForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        alert('Form submitted!');
+    });
+
+    function submitForm() {
+        alert('Form submitted!');
+    }
+</script>
+<a href="multimedia_blog_post.html"> Click for the next form</a>
+</body>
+</html>

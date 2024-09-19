@@ -1,0 +1,17 @@
+table{
+    border: 5px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2px;
+    padding: 4px black;
+}
+tr{
+    border-bottom: 1px solid black;
+    border: 2px solid black;
+    background-color: palevioletred;
+}
+th,td{
+    border-bottom: 1px solid blue;
+    border: 2px solid black;
+    background-color:aquamarine;
+}
